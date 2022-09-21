@@ -217,6 +217,21 @@ const user: IUser = {
 console.log(user.hi());
 ```
 
+### Generics <T, S, G>
+
+```typescript
+// Generics allow creating 'type variables' which can be used to create
+// classes, functions & type aliases that don't need to explicitly define the
+// types that they use.
+
+const createPair = <S, T>(v1: S, v2: T): [S, T] => {
+  return [v1, v2];
+};
+
+console.log(createPair(42, "foo")); // [42, "foo"]
+console.log(createPair(true, { bar: "baz" })); // [ true, { bar: 'baz' } ]
+```
+
 ### Union operator
 
 ```typescript
