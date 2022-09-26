@@ -14,7 +14,7 @@ _there are many like this, but this is mine_
 
 ```
 sudo npm install -g typescript
-yarn add global typescript
+yarn global add typescript
 ```
 
 ## Usage
